@@ -1,0 +1,94 @@
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 10;
+    font-display: swap;
+    src: url("../danial/01Fa-EnHairline.eot");
+    src: url("../danial/01Fa-EnHairline.eot?#iefix") format("embedded-opentype"),
+    url("../danial/01Fa-EnHairline.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("../danial/02Fa-EnThin.eot");
+    src: url("../danial/02Fa-EnThin.eot?#iefix") format("embedded-opentype"),
+    url("../danial/02Fa-EnThin.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../danial/03Fa-EnLight.eot");
+    src: url("../danial/03Fa-EnLight.eot?#iefix") format("embedded-opentype"),
+    url("../danial/03Fa-EnLight.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../danial/04Fa-EnRegular.eot");
+    src: url("../danial/04Fa-EnRegular.eot?#iefix") format("embedded-opentype"),
+    url("../danial/04Fa-EnRegular.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../danial/05Fa-EnMedium.eot");
+    src: url("../danial/05Fa-EnMedium.eot?#iefix") format("embedded-opentype"),
+    url("../danial/05Fa-EnMedium.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 750;
+    font-display: swap;
+    src: url("../danial/06Fa-EnBold.eot");
+    src: url("../danial/06Fa-EnBold.eot?#iefix") format("embedded-opentype"),
+    url("../danial/06Fa-EnBold.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../danial/07Fa-EnHeavy.eot");
+    src: url("../danial/07Fa-EnHeavy.eot?#iefix") format("embedded-opentype"),
+    url("../danial/07Fa-EnHeavy.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+    font-family: danial;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../danial/08Fa-EnFat.eot");
+    src: url("../danial/08Fa-EnFat.eot?#iefix") format("embedded-opentype"),
+    url("../danial/08Fa-EnFat.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+body {
+    font-family: danial;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
