@@ -1,13 +1,25 @@
 /* import danial font */
 @import "../fonts/danial/danial-font.css";
 
+
+:root {
+    --color-main: #1652f0;
+    --color-alt: #30d5f4;
+    --color-sell: #ff5050;
+    --color-buy: #1bb545;
+}
+
 body {
     direction: rtl;
 }
 
+.lp-color-attract {
+    color: var(--color-sell);
+}
+
 .lp-main-wrap {
     min-height: 100%;
-    padding-block-start: 100px;
+    padding-top: 100px;
     background: linear-gradient(180deg, #ffe6e6 0%, #fff 100%);
     position: relative;
 }
@@ -39,4 +51,21 @@ body {
 .lp-breadcrumb > li > :where(a, span) {
     color: #333;
     font-weight: 600;
+}
+
+/* MARK: jumbotron */
+.lp-jumbo {
+    font-size: 18px;
+    margin-top: 40px;
+    column-gap: 60px;
+}
+
+.lp-jumbo-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+.lp-jumbo-subtitle {
+    font-size: ;
 }
