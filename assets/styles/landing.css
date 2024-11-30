@@ -65,6 +65,7 @@ strong {
 .lp-jumbo {
     font-size: 18px;
     margin-top: 40px;
+    margin-bottom: 40px;
     column-gap: 60px;
 }
 
@@ -121,4 +122,38 @@ strong {
 .lp-jumbo-figure img {
     width: 380px;
     min-width: 300px;
+}
+
+/* MARK: how to */
+.lp-how-to-wrap {
+    max-width: 480px;
+    margin: 100px 0;
+}
+
+.lp-how-to-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lp-how-to-title {
+    margin-bottom: 50px;
+}
+
+.lp-how-to-item {
+    gap: 20px;
+    padding-inline-start: 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.lp-how-to-item-active::before {
+    content: '';
+    width: 4px;
+    height: 48px;
+    background: #0086ff;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
