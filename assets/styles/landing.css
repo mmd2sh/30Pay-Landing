@@ -29,14 +29,16 @@ strong {
     min-height: 100%;
     padding-top: 100px;
     background: linear-gradient(180deg, #ffe6e6 0%, #fff 100%);
+    isolation: isolate;
     position: relative;
+    transition: .3s;
 }
 
 .lp-bg-img {
     max-width: 100%;
     pointer-events: none;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     left: 0;
     top: 0;
 }
@@ -156,4 +158,50 @@ strong {
     position: absolute;
     right: 0;
     top: 50%;
+}
+
+/* MARK: audio player */
+.lp-audio-wrap {
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.lp-audio-header {
+    gap: 15px;
+}
+
+.lp-audio-box {
+    gap: 15px;
+}
+
+.lp-audio-play-pause-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.lp-audio-progress-bar {
+    direction: ltr;
+    height: 6px;
+    flex-grow: 1;
+    border-radius: 3px;
+    background: #ddd;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.lp-audio-progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: #007bff;
+    transition: width 0.2s;
+}
+
+.lp-audio-time {
+    font-size: 14px;
+    color: #555;
+    user-select: none;
 }
