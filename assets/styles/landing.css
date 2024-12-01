@@ -1,16 +1,44 @@
+
+
 /* import danial font */
 @import "../fonts/danial/danial-font.css";
-
 
 :root {
     --color-main: #1652f0;
     --color-alt: #30d5f4;
     --color-sell: #ff5050;
     --color-buy: #1bb545;
+
+    --header-offset: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scroll-margin-top: var(--header-offset);
 }
 
 body {
     direction: rtl;
+}
+
+/* MARK: scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #0086FF;
+    border-radius: 0;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #006BB3;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 134, 255, 0.2);
+    box-shadow: none;
+    border-radius: 8px;
 }
 
 img {
@@ -27,7 +55,7 @@ strong {
 
 .lp-main-wrap {
     min-height: 100%;
-    padding-top: 100px;
+    padding-top: var(--header-offset);
     background: linear-gradient(180deg, #ffe6e6 0%, #fff 100%);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -211,8 +239,25 @@ strong {
 /* MARK: article */
 .lp-article-wrap {
     text-align: justify;
+    gap: 30px;
+}
+
+.lp-article {
+    flex: 1;
 }
 
 .lp-article img {
     border-radius: 15px;
+}
+
+.lp-article-aside {
+    width: 398px;
+}
+
+.lp-article-nav {
+    max-height: 70vh;
+    padding-inline-end: 20px;
+    overflow: auto;
+    position: sticky;
+    top: var(--header-offset);
 }

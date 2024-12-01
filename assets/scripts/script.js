@@ -1,3 +1,26 @@
+/* 30Pay Landing Scripts by: mohamad-sh.ir */
+
+// MARK: article nav generate
+$('.lp-article-wrap').each(function(_, wrap) {
+    const list = $('.lp-article-nav', wrap);
+    const headers = $('.lp-article :header', wrap);
+
+    list.each(function(_, navWrap) {
+        let items = '';
+
+        headers.each(function(i, headerItem) {
+            const id = `articleNav_${headerItem.tagName}_${i}`;
+            const text = headerItem.innerText.trim();
+
+            headerItem.id = id;
+            items += `<li class="lp-article-nav-item"><a href="#${id}">${text}</a></li>`;
+        });
+
+        if (items) navWrap.innerHTML = items;
+    });
+});
+
+// MARK: audio player
 $('.lp-audio-wrap').each(function(_, wrap) {
     const audio = $('.lp-audio-tag', wrap);
     const playPauseBtn = $('.lp-audio-play-pause-btn', wrap);
