@@ -29,6 +29,8 @@ strong {
     min-height: 100%;
     padding-top: 100px;
     background: linear-gradient(180deg, #ffe6e6 0%, #fff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
     isolation: isolate;
     position: relative;
     transition: .3s;
@@ -204,4 +206,13 @@ strong {
     font-size: 14px;
     color: #555;
     user-select: none;
+}
+
+/* MARK: article */
+.lp-article-wrap {
+    text-align: justify;
+}
+
+.lp-article img {
+    border-radius: 15px;
 }
