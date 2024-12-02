@@ -705,6 +705,8 @@
                         </li>
                     </ul>
 
+                    <div class="swiper-pagination"></div>
+
                 </section>
 
             </div><!-- container end -->
@@ -716,16 +718,17 @@
 
         <script>
             var swiper = new Swiper('.lp-coin-cards-wrap', {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
-                el: '.swiper-pagination',
+                    el: '.swiper-pagination',
                     clickable: true,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
                 breakpoints: {
-                    640: {
-                        slidesPerView: 1,
-                    },
                     768: {
                         slidesPerView: 2,
                     },
@@ -734,6 +737,7 @@
                     },
                 }
             });
+
           </script>
     </body>
 </html>
