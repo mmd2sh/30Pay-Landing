@@ -2,9 +2,8 @@
 :root {
     --color-main: #1652f0;
     --color-alt: #30d5f4;
-    --color-sell: #ff5050;
-    --color-buy: #1bb545;
-
+    --color-loss: #ff5050;
+    --color-gain: #1bb545;
     --header-offset: 100px;
 }
 
@@ -47,8 +46,14 @@ strong {
     font-weight: bold;
 }
 
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1278px;
+    }
+}
+
 .lp-color-attract {
-    color: var(--color-sell);
+    color: var(--color-loss);
 }
 
 .lp-main-wrap {
@@ -138,6 +143,7 @@ strong {
 .lp-btn[disabled] {
     color: #333;
     background: #ededed;
+    pointer-events: none;
     cursor: text;
 }
 
@@ -146,7 +152,7 @@ strong {
     padding: 3px 10px;
     border-radius: 30px;
     white-space: nowrap;
-    background: var(--color-sell);
+    background: var(--color-loss);
 }
 
 .lp-jumbo-figure img {
@@ -330,4 +336,79 @@ strong {
     z-index: -1;
     right: 4px;
     top: 0;
+}
+
+/* MARK: coin cards */
+.lp-coin-cards-wrap {
+    margin: 100px 0;    
+}
+
+.lp-coin-cards-list {
+    height: auto !important;
+}
+
+.lp-coins-card-item {
+    padding: 32px 40px;
+    border-radius: 24px;
+    border: 1px solid #ebf5ff;
+}
+
+.lp-coin-item a {
+    color: #1c1d1f;
+    font-weight: 700;
+}
+
+[class*=lp-coins-card-title] {
+    color: #1c1d1f;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+[class*=lp-coins-card-title]::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    margin-inline-end: 10px;
+    border-radius: 10px;
+    background: var(--color-main);
+    vertical-align: middle;
+}
+
+.lp-coins-card-title-gain::before {
+    background: var(--color-gain);
+}
+
+.lp-coins-card-title-loss::before {
+    background: var(--color-loss);
+}
+
+.lp-coins-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lp-coin-item-info {
+    gap: 10px;
+}
+
+.lp-coin-item-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.lp-coin-item-values {
+    text-align: end;
+    margin-inline-start: auto;
+}
+
+.lp-coin-item-vary-gain {
+    color: var(--color-gain);
+}
+
+.lp-coin-item-vary-loss {
+    color: var(--color-loss);
 }
