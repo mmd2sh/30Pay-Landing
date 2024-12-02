@@ -156,8 +156,18 @@ strong {
 
 /* MARK: how to */
 .lp-how-to-wrap {
-    max-width: 480px;
+    gap: 30px;
+    max-width: 100%;
+    padding: 40px;
     margin: 100px 0;
+    border-radius: 24px;
+    background: #f5f9fd;
+}
+
+.lp-how-to-details {
+    flex: 1;
+    min-width: 270px;
+    max-width: 100%;
 }
 
 .lp-how-to-list {
@@ -186,6 +196,25 @@ strong {
     position: absolute;
     right: 0;
     top: 50%;
+}
+
+.lp-how-to-video {
+    flex: 1;
+    max-width: 100%;
+}
+
+.lp-how-to-video > * {
+    width: 442px !important;
+    max-width: 100%;
+    border: 0;
+    border-radius: 24px;
+    margin-inline-start: auto;
+    overflow: hidden;
+}
+
+.lp-how-to-video iframe {
+    border: 0;
+    border-radius: 24px;
 }
 
 /* MARK: audio player */
