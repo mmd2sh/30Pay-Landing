@@ -17,7 +17,7 @@ html {
 
 body {
     direction: rtl;
-    font-weight: 400;
+    font-weight: 600;
     background: #fff;
 }
 
@@ -56,12 +56,35 @@ strong {
     color: var(--color-loss);
 }
 
+.gap\:5  { gap: 5px }
+.gap\:10 { gap: 10px }
+.gap\:15 { gap: 15px }
+.gap\:20 { gap: 20px }
+.gap\:25 { gap: 25px }
+.gap\:30 { gap: 30px }
+.gap\:35 { gap: 35px }
+.gap\:40 { gap: 40px }
+.gap\:45 { gap: 45px }
+.gap\:50 { gap: 50px }
+.gap\:55 { gap: 55px }
+.gap\:60 { gap: 60px }
+.gap\:65 { gap: 65px }
+.gap\:70 { gap: 70px }
+.gap\:75 { gap: 75px }
+.gap\:80 { gap: 80px }
+.gap\:85 { gap: 85px }
+.gap\:90 { gap: 90px }
+.gap\:95 { gap: 95px }
+.gap\:100 { gap: 100px }
+
 .lp-main-wrap {
     min-height: 100%;
     padding-top: var(--header-offset);
     background: linear-gradient(180deg, #ffe6e6 0%, #fff 100%);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    background: linear-gradient(135deg, #ffffff 40%, #d4ebff 60%, #a3d1ff 70%, #8ee4e1 85%, #bbf0bb 100%);
+    background-attachment: fixed;
     isolation: isolate;
     position: relative;
     transition: .3s;
@@ -101,7 +124,6 @@ strong {
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 40px;
-    column-gap: 60px;
 }
 
 .lp-jumbo-details {
@@ -162,7 +184,6 @@ strong {
 
 /* MARK: how to */
 .lp-how-to-wrap {
-    gap: 30px;
     max-width: 100%;
     padding: 40px;
     margin: 100px 0;
@@ -187,7 +208,6 @@ strong {
 }
 
 .lp-how-to-item {
-    gap: 20px;
     padding-inline-start: 20px;
     margin: 20px 0;
     position: relative;
@@ -234,11 +254,9 @@ strong {
 }
 
 .lp-audio-header {
-    gap: 15px;
 }
 
 .lp-audio-box {
-    gap: 15px;
 }
 
 .lp-audio-play-pause-btn {
@@ -274,7 +292,6 @@ strong {
 /* MARK: article */
 .lp-article-wrap {
     text-align: justify;
-    gap: 30px;
 }
 
 .lp-article {
@@ -307,6 +324,7 @@ strong {
 .lp-article-nav > li > a {
     display: flex;
     align-items: center;
+    text-align: start;
     color: #1c1d1f;
     font-size: 17px;
     font-weight: 600;
@@ -348,9 +366,11 @@ strong {
 }
 
 .lp-coins-card-item {
+    height: auto !important;!i;!;
     padding: 32px 40px;
     border-radius: 24px;
     border: 1px solid #ebf5ff;
+    background: #fff;
 }
 
 .lp-coin-item a {
@@ -387,11 +407,9 @@ strong {
 .lp-coins-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .lp-coin-item-info {
-    gap: 10px;
 }
 
 .lp-coin-item-img {
@@ -411,4 +429,50 @@ strong {
 
 .lp-coin-item-vary-loss {
     color: var(--color-loss);
+}
+
+.lp-coin-cards-wrap .swiper-pagination-bullet {
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.lp-coin-cards-wrap .swiper-pagination-bullet-active {
+    width: 30px;
+}
+
+/* MARK: goin gifts */
+.lp-coin-gift-seek {
+    padding: 40px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #F5FAFF 0%, #FFFFFF 100%);
+}
+
+.lp-coin-gift-seek-btn-wrap {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.lp-coin-gift-seek-btn-wrap .lp-btn:not(.bg-primary) {
+    color: var(--color-main);
+    background: #ebf5ff;
+}
+
+.lp-coin-gift-seek-circle {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.lp-coin-gift-seek-counter {
+    font-size: 24px;
+}
+
+.lp-coin-gift-seek-circle > * {
+    grid-area: 1/1;
+}
+
+.lp-coin-gift-figure {
+    flex-shrink: 0;
+    width: 422px;  
+    max-width: 100%;
 }
