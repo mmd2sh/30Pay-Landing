@@ -21,6 +21,10 @@ body {
     background: #fff;
 }
 
+*, ::before, ::after {
+    /* outline: 1px solid deeppink; */
+}
+
 /* MARK: scrollbar */
 ::-webkit-scrollbar-thumb {
     background-color: #0086FF;
@@ -76,6 +80,10 @@ strong {
 .gap\:90 { gap: 90px }
 .gap\:95 { gap: 95px }
 .gap\:100 { gap: 100px }
+
+.flex-1 {
+    flex: 1;
+}
 
 .lp-main-wrap {
     min-height: 100%;
@@ -193,7 +201,7 @@ strong {
 
 .lp-how-to-details {
     flex: 1;
-    min-width: 270px;
+    min-width: 260px;
     max-width: 100%;
 }
 
@@ -290,7 +298,7 @@ strong {
 }
 
 /* MARK: article */
-.lp-article-wrap {
+.lp-article-wrap p {
     text-align: justify;
 }
 
@@ -454,6 +462,7 @@ strong {
 
 .lp-coin-gift-seek-btn-wrap .lp-btn:not(.bg-primary) {
     color: var(--color-main);
+    white-space: nowrap;
     background: #ebf5ff;
 }
 
