@@ -348,6 +348,10 @@ strong {
     vertical-align: middle;
 }
 
+.lp-article-nav > li.active > a::before {
+    border-color: #0086ff;
+}
+
 .lp-article-nav > li > a::after {
     content: '';
     width: 4px;

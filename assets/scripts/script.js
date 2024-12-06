@@ -14,6 +14,32 @@ $('.lp-article-wrap').each(function(_, wrap) {
 
             headerItem.id = id;
             items += `<li class="lp-article-nav-item"><a href="#${id}">${text}</a></li>`;
+
+            // observer for article scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        $(entry.target).addClass('active'); // Add class when in view
+
+                        const item = $(`[href="#${entry.target.id}"]`).parent();
+                        const list = item.parent();
+                        const pos = item.position().top + list.scrollTop() - 20; // Calculate the scroll position
+
+                        item.addClass('active');
+                        item.siblings().removeClass('active');
+
+                        list.stop().animate({ scrollTop: pos }, 500);
+
+                    } else {
+                        $(entry.target).removeClass('active'); // Remove class when out of view
+                    }
+                });
+            },{
+                threshold: 0.5, // Adjust to trigger when 50% of the element is in view
+            });
+
+            // Observe each element
+            observer.observe(headerItem);
         });
 
         if (items) navWrap.innerHTML = items;
