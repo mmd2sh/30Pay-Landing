@@ -492,11 +492,12 @@ strong {
 
 .lp-app-dl-pic img {
     width: 100%;
+    min-height: 300px;
 }
 
 .lp-app-dl-title {
     color: #fff;
-    font-size: 32px;
+    font-size: clamp(20px, 3vw, 32px);
     font-weight: 700;
     line-height: 1.5em;
     margin-bottom: 20px;
@@ -504,10 +505,10 @@ strong {
 
 .lp-app-dl-text {
     color: #fff;
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     font-weight: 500;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: clamp(14px, 3vw, 30px);
 }
 
 .lp-app-dl-dets .lp-btn {

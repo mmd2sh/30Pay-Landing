@@ -20,6 +20,29 @@ $('.lp-article-wrap').each(function(_, wrap) {
     });
 });
 
+!function() { // coin cards swiper
+    var swiper = new Swiper('.lp-coin-cards-wrap', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            960: {
+                slidesPerView: 3,
+            },
+        }
+    });
+}();
+
 // MARK: audio player
 $('.lp-audio-wrap').each(function(_, wrap) {
     const audio = $('.lp-audio-tag', wrap);
