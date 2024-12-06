@@ -313,6 +313,7 @@ strong {
     padding: 24px;
     border-radius: 24px;
     border: 1px solid #ebf5ff;
+    background: #fff;
     position: sticky;
     top: var(--header-offset);
 }
@@ -592,4 +593,24 @@ strong {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* MARK: comments */
+.lp-comments-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.lp-comments-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(28, 29, 31, 0.4);
+}
+
+.lp-comments-register-btn {
+    color: #333;
+    order: 1px solid #ebf5fe;
+    background: #fff;
 }
