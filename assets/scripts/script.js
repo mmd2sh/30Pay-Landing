@@ -43,6 +43,15 @@ $('.lp-article-wrap').each(function(_, wrap) {
     });
 }();
 
+// MARK: faq
+$('.lp-faq-question').on('click', function() {
+    const item = $(this).closest('.lp-faq-item');
+    const anwser = $('.lp-faq-anwser', item);
+    
+    item.siblings().removeClass('active');
+    item.toggleClass('active');
+});
+
 // MARK: audio player
 $('.lp-audio-wrap').each(function(_, wrap) {
     const audio = $('.lp-audio-tag', wrap);
