@@ -261,12 +261,6 @@ strong {
     background: #fff;
 }
 
-.lp-audio-header {
-}
-
-.lp-audio-box {
-}
-
 .lp-audio-play-pause-btn {
     border: none;
     background: none;
@@ -484,4 +478,46 @@ strong {
     flex-shrink: 0;
     width: 422px;  
     max-width: 100%;
+}
+
+/* MARK: app download */
+.lp-app-dl-wrap {
+    display: grid;
+    align-items: center;
+}
+
+.lp-app-dl-wrap > * {
+    grid-area: 1 / 1;
+}
+
+.lp-app-dl-pic img {
+    width: 100%;
+}
+
+.lp-app-dl-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.lp-app-dl-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.lp-app-dl-dets .lp-btn {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    background: #fff;
+}
+
+.lp-app-dl-dets .lp-btn > span {
+    display: inline-block;
+    vertical-align: -1px;
 }
